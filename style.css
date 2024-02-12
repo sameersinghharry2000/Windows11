@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.windows11{
+    background-image:url(windows\ 11\ wallpaper.jpeg);
+    background-size:100%,contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+.navbar{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:50px;
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tempature{
+    margin-left:10px;
+    background-color: green;
+    width:30px;
+    height:30px;
+}
+.timemenu{
+    margin-right:10px;
+    background-color:green;
+    width:30px;
+    height:30px;
+}
+.apps{
+    display:flex;
+    gap:5px;
+}
+.softwares{
+    background-color: red;
+    width:30px;
+    height:30px;
+}
+.searchbar{
+    display:flex;
+    align-items: center;
+}
