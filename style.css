@@ -45,4 +45,26 @@
 .searchbar{
     display:flex;
     align-items: center;
+    position: relative;
 }
+.searchbar input{
+    width:100%;
+    height:30px;
+    border-radius: 20px;
+    border:0.5px solid rgb(207, 206, 206);
+    padding-left:28px;
+}
+.searchbar::before{
+    position:absolute;
+    content: "";
+    top:8px;
+    left:8px;
+    background-image: url(img/search_icon.svg);
+    background-repeat: no-repeat;
+    width:15px;
+    height:15px;
+}
+.searchbar input:hover{
+    background-color: rgba(0, 255, 255, 0.005);
+}
+
