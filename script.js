@@ -15,3 +15,7 @@ let backallapps = document.getElementById("backallapps");
 backallapps.addEventListener("click",function(){
     document.getElementById("all_applications").style.display="none";
 })
+ document.getElementById("switchoff").addEventListener("click",function(){
+    document.getElementById("switchoptions").classList.toggle("switchoptions2")
+ })
+ document.getElementById("time").innerHTML = Date();

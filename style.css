@@ -76,13 +76,14 @@
 
 .mainmenu{
     position: absolute;
-    bottom:-700px;
+    bottom:-770px;
     right:30%;
     width:600px;
     height:650px;
     border-radius: 10px;
     background-color:aliceblue;
     transition: 0.2s;
+    
 }
 .mainmenu2{
     bottom:70px;
@@ -226,15 +227,54 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size:14px;
 }
-.switchoff{
-    display: flex;
-    justify-content: end;
-}
 .profile,.switchoff{
-
+    
     width:1300px;
     height:30px;
     margin:0px 50px;
+}
+.switchoff{
+    display: flex;
+    justify-content: end;
+
+    width:30px
+
+}
+
+/* Shutdown Option  */
+
+.switchoptions{
+    position:absolute ;
+    bottom:60px;
+    left:460px;
+    border: 0.1px solid rgba(0, 0, 0, 0.055);
+    background-color:white;
+    width:150px;
+    height:120px;
+    display: none;
+    border-radius: 10px;
+    z-index: 3;
+    
+}
+.switchoptions2{
+    display: block;
+}
+.switchoptions h5{
+    display: flex;
+    align-items: center;
+    margin:6px 0;
+    font-size: 11px;
+    width: 100%;
+    padding:0 0 2px 5px;
+    cursor: pointer;
+}
+.switchoptions h5:nth-child(1){
+    border-bottom:0.1px solid rgba(0, 0, 0, 0.089);
+    display: flex;
+    align-items: center;
+}
+.switchoptions img{
+    margin-right:5px;
 }
 
 /* Showing All Applications Start*/
@@ -245,14 +285,14 @@
     position: absolute;
     top:0;
     z-index: 2;
-    background-color: red;
+    background-color: aliceblue;
     display:none;
 }
 .all_applications2{
     display:block;
 }
 .all_applications .heading{
-    background-color: green;
+
     width: 100%;
     height: 10%;
     display:flex;
@@ -262,12 +302,16 @@
     font-size: 13px;
 }
 .all_applications .heading button{
-    width:60px;
-    height: 17px;
-    border:0.2px solid rgba(0, 0, 0, 0.24);
-    border-radius: 4px;
-    font-size: 12px;
-    background-color: #fff;
+    width: 52px;
+    font-size:12px;
+    border:0.2px solid rgba(20, 20, 20, 0.144);
+    border-radius: 5px;
+    text-align: start;
+    padding:2px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .applications{
     max-height:90%;
@@ -275,10 +319,15 @@
     overflow: auto;
 
 }
+.applications::-webkit-scrollbar {
+    display: none;
+  }
 .applis{
     width:90%;
-    height: 30px;
-    background-color: blueviolet;
+    height: 40px;
     gap:20px;
-    margin:5px;
+    margin:20px 0 0 0;
+}
+.applis:hover{
+    background-color: #fff;
 }
