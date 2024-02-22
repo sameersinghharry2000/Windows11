@@ -2,14 +2,16 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .windows11{
-    background-image:url(windows\ 11\ wallpaper.jpeg);
+    background-image:url(img/wallpaperflare.com_wallpaper.jpg);
     background-size:100%,contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     position:relative;
+    overflow: hidden;
 }
 .navbar{
     position:fixed;
@@ -20,10 +22,11 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 .tempature{
     margin-left:10px;
-    background-color: green;
+
     width:30px;
     height:30px;
 }
@@ -35,12 +38,13 @@
 }
 .apps{
     display:flex;
-    gap:5px;
+    gap:10px;
+
 }
 .softwares{
-    background-color: red;
     width:30px;
     height:30px;
+    cursor: pointer;
 }
 .searchbar{
     display:flex;
@@ -55,16 +59,226 @@
     padding-left:28px;
 }
 .searchbar::before{
-    position:absolute;
     content: "";
-    top:8px;
-    left:8px;
-    background-image: url(img/search_icon.svg);
-    background-repeat: no-repeat;
-    width:15px;
-    height:15px;
+    position: absolute;
+    top:6px;
+    left:6px;
+    background-image: url(img/icons/9.png);
+    background-size: cover;
+    width:17px;
+    height: 17px;
 }
 .searchbar input:hover{
     background-color: rgba(0, 255, 255, 0.005);
 }
 
+/* Main Menu Start */
+
+.mainmenu{
+    position: absolute;
+    bottom:-700px;
+    right:30%;
+    width:600px;
+    height:650px;
+    border-radius: 10px;
+    background-color:aliceblue;
+    transition: 0.2s;
+}
+.mainmenu2{
+    bottom:70px;
+}
+.menu_searchbar{
+
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu_searchbar input{
+    border:0.5px solid rgba(207, 206, 206, 0.479);
+    border-radius: 10px;
+    width:90%;
+    height:25px;
+    padding-left:30px;
+    font-size:13px;
+}
+.menu_searchbar::before{
+    content: "";
+    position: absolute;
+    top:25px;
+    left:40px;
+    background-image: url(img/icons/9.png);
+    background-size: cover;
+    width:11px;
+    height: 10px;
+}
+.menu_appsrecommmended{
+    width:100%;
+    height: 80%;
+    position: relative;
+}
+.menu_allapps{
+
+    width:100%;
+    height:55%;
+}
+.menu_recommended{
+
+    width:100%;
+    height:45%;
+}
+.allapps_heading{
+
+    width:100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 40px;
+    font-size: 12px;
+}
+.allapps_heading button{
+    width: 70px;
+    font-size:12px;
+    border:0.2px solid rgba(20, 20, 20, 0.144);
+    border-radius: 5px;
+    text-align: start;
+    padding:2px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.allapps_heading img{
+
+}
+.allapps_apps{
+
+    width:100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:40px;
+    padding:10px;
+}
+.softs{
+    width:50px;
+    height:40px;
+    background-color: red;
+}
+
+.recommended_heading{
+    width: 100%;
+    height:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 40px;
+    font-size: 12px;
+}
+.recommended_recom{
+    width:100%;
+    height:80%;
+    gap:10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+}
+.recom_boxes{
+    background-color: green;
+    width:200px;
+    height: 40px;
+}
+.recommended_heading button{
+    width: 60px;
+    font-size:12px;
+    border:0.2px solid rgba(20, 20, 20, 0.144);
+    border-radius: 5px;
+    text-align: start;
+    padding:2px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_profile{
+    background-color: rgb(233, 238, 243);
+    border-top: 0.2px solid rgb(221, 218, 218);
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:0 0 10px 10px;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+.switchoff{
+    display: flex;
+    justify-content: end;
+}
+.profile,.switchoff{
+
+    width:1300px;
+    height:30px;
+    margin:0px 50px;
+}
+
+/* Showing All Applications Start*/
+
+.all_applications{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: 2;
+    background-color: red;
+    display:none;
+}
+.all_applications2{
+    display:block;
+}
+.all_applications .heading{
+    background-color: green;
+    width: 100%;
+    height: 10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    font-size: 13px;
+}
+.all_applications .heading button{
+    width:60px;
+    height: 17px;
+    border:0.2px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: #fff;
+}
+.applications{
+    max-height:90%;
+    padding:10px 0 0 35px;
+    overflow: auto;
+
+}
+.applis{
+    width:90%;
+    height: 30px;
+    background-color: blueviolet;
+    gap:20px;
+    margin:5px;
+}

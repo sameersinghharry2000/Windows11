@@ -1,45 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows 11</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
     <div class="windows11">
 
+        <!-- Nav bar start -->
 
         <div class="navbar">
             <div class="nav1">
-                <div class="tempature"></div>
+                <div class="tempature">
+                    <img src="img/icons/10.png" style="width:100%" alt="file">
+                </div>
             </div>
             <div class="nav2">
                 <div class="apps">
-                    <div class="softwares"></div>
-                    <div class="searchbar">
-                        <input type="text"
-                        placeholder="Search">
-                        
+                    <div id="windows11key" class="softwares">
+                        <img src="img/icons/1.png" style="width:100%" alt="windowkey">
                     </div>
-                    <div class="softwares"></div>
-                    <div class="softwares"></div>
-                    <div class="softwares"></div>
-                    <div class="softwares"></div>
-                    <div class="softwares"></div>
-                    <div class="softwares"></div>
-                    <div class="softwares"></div>
+                    <div class="searchbar">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/2.png" style="width:100%" alt="edge">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/3.png" style="width:100%" alt="file">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/4.png" style="width:100%" alt="file">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/5.png" style="width:100%" alt="file">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/6.svg" style="width:100%" alt="file">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/7.png" style="width:100%" alt="file">
+                    </div>
+                    <div class="softwares">
+                        <img src="img/icons/8.svg" style="width:100%" alt="file">
+                    </div>
                 </div>
             </div>
             <div class="nav3">
                 <div class="timemenu"></div>
             </div>
         </div>
+
+        <!-- Nav bar end -->
+
+        <!-- Main menu start -->
+
+        <div id="mainmenu" class="mainmenu">
+            <div class="menu_searchbar">
+                <input type="text" placeholder="Search for apps, settings, and documents">
+            </div>
+
+            <div class="menu_appsrecommmended">
+                <!-- all applications  -->
+                <div id="all_applications" class="all_applications">
+                    <div class="heading">
+                        <h4>All apps</h4>
+                        <button id="backallapps">
+                            <img src="img/icons/left-arrow.png" width="8px" alt="">
+                            back
+                        </button>
+                    </div>
+                    <div id="applications3" class="applications" >
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                        <div class="applis"></div>
+                    </div>
+                </div>
+                <div class="menu_allapps">
+                    <div class="allapps_heading">
+
+
+                        <h4>Pinned</h4>
+                        <button id="callAllApps">All apps
+                            <img src="img/icons/right-arrow.png" width="8px" alt="">
+                        </button>
+                    </div>
+                    <div class="allapps_apps">
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                        <div class="softs"></div>
+                    </div>
+                </div>
+                <div class="menu_recommended">
+                    <div class="recommended_heading">
+                        <h4>Recommended</h4>
+                        <button>More
+                            <img src="img/icons/right-arrow.png" width="8px" alt="">
+                        </button>
+                    </div>
+                    <div class="recommended_recom">
+                        <div class="recom_boxes"></div>
+                        <div class="recom_boxes"></div>
+                        <div class="recom_boxes"></div>
+                        <div class="recom_boxes"></div>
+                        <div class="recom_boxes"></div>
+                        <div class="recom_boxes"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_profile">
+                <div class="profile">
+                    <img src="img/icons/11.png" width="25px" alt="">
+                    Harry
+                </div>
+                <div class="switchoff">
+                    <img src="img/icons/12.png" width="30px" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main menu end -->
+
     </div>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
