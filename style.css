@@ -79,9 +79,6 @@
     display: flex;
 }
 
-#date{
-
-}
 .apps{
     display:flex;
     gap:2px;
@@ -102,9 +99,7 @@
     background-color: rgba(0, 0, 0, 0.144);
     border-radius: 10px;
 }
-.softwares img{
 
-}
 .searchbar{
     display:flex;
     align-items: center;
@@ -209,9 +204,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-.allapps_heading img{
 
 }
 .allapps_apps{
