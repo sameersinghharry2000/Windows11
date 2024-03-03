@@ -14,14 +14,20 @@
 <body>
 
     <div class="windows11">
-<div id="time" class="time"></div>
-        <!-- Nav bar start -->
 
+        <!-- Nav bar start -->
         <div class="navbar">
             <div class="nav1">
-                <div class="tempature">
-                    <img src="img/icons/10.png" style="width:100%" alt="file">
+
+                <!-- Tempature -->
+
+                <div onmouseover="inn(this)" onmouseout="out(this)" id="tempature" class="tempature">
+                    <div class="tempaturedata">
+                        <h2></h2>
+                        <h4></h4>
+                    </div>
                 </div>
+
             </div>
             <div class="nav2">
                 <div class="apps">
@@ -54,15 +60,32 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Time Menu  -->
             <div class="nav3">
-                <div class="timemenu"></div>
+
+                <div class="nav3apps"><img src="img/timebar/arrow-down-sign-to-navigate.png" width="12px;" alt=""></div>
+                <div class="nav3apps"><img src="img/timebar/icons8-reload-50.png" width="20px" ; alt=""></div>
+                <div class="nav3apps"><img src="img/timebar/icons8-wifi-64.png" width="20px" ; alt=""></div>
+                <div class="nav3apps"><img src="img/timebar/icons8-sound-50.png" width="20px" alt=""></div>
+                <div class="nav3apps"><img src="img/timebar/icons8-battery-30.png" width="20px" alt=""></div>
+
+                <div class="timemenu">
+                    <div class="time">
+                        <div id="hrs"></div>
+                    </div>
+                    <div id="date">
+
+                    </div>
+                </div>
+                <div class="nav3apps"><img src="img/timebar/icons8-alarm-32.png" width="20px" alt=""></div>
+                <!-- Time Menu End  -->
+
             </div>
         </div>
-
         <!-- Nav bar end -->
 
         <!-- Main menu start -->
-
         <div id="mainmenu" class="mainmenu">
             <div class="menu_searchbar">
                 <input type="text" placeholder="Search for apps, settings, and documents">
@@ -78,7 +101,7 @@
                             back
                         </button>
                     </div>
-                    <div id="applications3" class="applications" >
+                    <div id="applications3" class="applications">
                         <div class="applis"></div>
                         <div class="applis"></div>
                         <div class="applis"></div>
@@ -132,7 +155,7 @@
                         </button>
                     </div>
                     <div class="allapps_apps">
-                        <div class="softs"></div>
+                        <div class="software"></div>
                         <div class="softs"></div>
                         <div class="softs"></div>
                         <div class="softs"></div>
@@ -184,10 +207,30 @@
                 </div>
             </div>
         </div>
-
-
-
         <!-- Main menu end -->
+
+        <!-- Tempature Page  -->
+        <div class="tempaturePage">
+            <div id="tempaturePageBackground" class="tempaturePageBackground">
+                <div class="col1">
+                    <div class="box1">
+                        <div class="country"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="box2">
+                        <div class="temp"></div>
+                        <div class="futureTemp"></div>
+                    </div>
+                </div>
+                <div class="col2">
+
+                </div>
+                <div class="col3">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Tempature Page End  -->
 
     </div>
 

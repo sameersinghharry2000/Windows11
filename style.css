@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .windows11{
     background-image:url(img/wallpaperflare.com_wallpaper.jpg);
@@ -25,26 +26,84 @@
     z-index: 1;
 }
 .tempature{
-    margin-left:10px;
-
-    width:30px;
-    height:30px;
+    margin-left:8px;
+    width:auto;
+    height:auto;
+    color:black;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding:10px;
 }
+.tempature:hover{
+    background-color: rgba(0, 0, 0, 0.082);
+
+}
+
+.tempature img{
+    width:50px;
+    margin-right:7px;
+
+}
+.tempaturedata h2{
+    font-size: 16px;
+    margin-top:6px;
+}
+.tempaturedata h4{
+    font-size:14px;
+}
+
+/* Time menu  */
+.nav3{
+    height: 50px;
+    min-width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:9px;
+    margin-right:15px;
+}
+
 .timemenu{
-    margin-right:10px;
-    background-color:green;
-    width:30px;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+    width:100%;
     height:30px;
+
+}
+.timemenu .time{
+    display: flex;
+}
+
+#date{
+
 }
 .apps{
     display:flex;
-    gap:10px;
+    gap:2px;
 
 }
 .softwares{
-    width:30px;
-    height:30px;
+    width:50px;
+    height:auto;
     cursor: pointer;
+    padding:2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:9px;
+
+}
+.softwares:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 10px;
+}
+.softwares img{
+
 }
 .searchbar{
     display:flex;
@@ -61,12 +120,11 @@
 .searchbar::before{
     content: "";
     position: absolute;
-    top:6px;
     left:6px;
     background-image: url(img/icons/9.png);
     background-size: cover;
-    width:17px;
-    height: 17px;
+    width:15px;
+    height: 15px;
 }
 .searchbar input:hover{
     background-color: rgba(0, 255, 255, 0.005);
@@ -83,7 +141,7 @@
     border-radius: 10px;
     background-color:aliceblue;
     transition: 0.2s;
-    
+    /* margin-left:100px; */
 }
 .mainmenu2{
     bottom:70px;
@@ -172,7 +230,6 @@
     height:40px;
     background-color: red;
 }
-
 .recommended_heading{
     width: 100%;
     height:20%;
@@ -330,4 +387,85 @@
 }
 .applis:hover{
     background-color: #fff;
+}
+ 
+/* Tempature Page  */
+.tempaturePage{
+    position: absolute;
+    bottom:100px;
+    left:-350px;
+    width:300px;
+    height:400px;
+    background-image: url(img/weather/pexels-simone-cappellari-15766222.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    transition:1s;
+    
+}
+
+.tempaturePage2{
+    border:5px solid black;
+}
+.tempaturePage3{
+    left:-350px;   
+}
+.tempaturePageBackground{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter:blur(2px);
+    border-radius: 20px;
+
+}
+.tempaturePageBackground .col1{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    padding:15px;
+    color:white;
+    margin-top:20px;
+}
+.tempaturePageBackground .col1 .box1 .country{
+    font-size:30px;
+}
+.tempaturePageBackground .col1 .box1 .date{
+    font-size:15px;
+}
+.tempaturePageBackground .col1 .box2{
+    font-size:34px;
+}
+
+.tempaturePageBackground .col2{
+    width:100%;
+}
+.tempaturePageBackground .col2 img{
+    width:100px;
+    margin:5px;
+}
+
+.tempaturePageBackground .col3{
+    width: 90%;
+    height: 100px;
+    border-top:1px solid #ffffff69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+    color:#fff;
+    font-size:12px;
+}
+.tempaturePageBackground .col3 .boxs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.tempaturePageBackground .col3 img{
+    width: 45px;
+    height: 45px;
+
 }
